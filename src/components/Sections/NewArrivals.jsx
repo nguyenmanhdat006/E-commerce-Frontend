@@ -1,4 +1,3 @@
-import React from "react";
 import SeactionHeading from "./SectionsHeading/SeactionHeading.jsx";
 import Card from "../Card/Card.jsx";
 import Jeans from '../../assets/img/jeans.jpg'
