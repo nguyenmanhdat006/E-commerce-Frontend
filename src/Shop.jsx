@@ -9,7 +9,6 @@ import Footer from './components/Footer/Footer.jsx';
 const Shop = () => {
   return (
     <>
-      <Navigation />
       <HeroSection />
       <NewArrivals />
       {content?.categories && content?.categories?.map((item, index) => <Category key={item?.title+index} {...item} />)}

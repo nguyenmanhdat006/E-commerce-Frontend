@@ -1,5 +1,3 @@
-import React from 'react'
-
 export const Wishlist = () => {
     return (
         <svg width="44" height="44" viewBox="0 0 44 44" fill="none" className='hover:fill-black' xmlns="http://www.w3.org/2000/svg">
