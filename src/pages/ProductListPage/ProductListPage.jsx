@@ -1,5 +1,14 @@
 import FilterIcon from "../../components/common/FilterIcon";
-const ProductListPage = () => {
+import content from "../../data/content.json";
+import { useMemo } from "react";
+
+const categories = content?.categories;
+
+const ProductListPage = ({categoryType}) => {
+
+  const categoryContent = useMemo(() => {
+    return categories?.find((Category) => Category.code === categoryType);
+  } , [categoryType]);
   return (
     <>
       <div className="flex">
@@ -10,8 +19,8 @@ const ProductListPage = () => {
           </div>
           <p className="text-[16px] text-black mt-5">Categories</p>
         </div>
-        <div className="p-[40px]">
-          <p>Hello!</p>
+        <div className="p-[15px]">
+          <p className="text-black text-lg">{categoryContent?.description}</p>
         </div>
       </div>
     </>
