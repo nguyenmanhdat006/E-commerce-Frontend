@@ -1,6 +1,7 @@
 import FilterIcon from "../../components/common/FilterIcon";
+import Categories from "../../components/Filters/Categories";
 import content from "../../data/content.json";
-import { useMemo } from "react";
+import { useMemo } from "react";  
 
 const categories = content?.categories;
 
@@ -8,7 +9,7 @@ const ProductListPage = ({categoryType}) => {
 
   const categoryContent = useMemo(() => {
     return categories?.find((Category) => Category.code === categoryType);
-  } , [categoryType]);
+  } , [categoryType]); // chỉ khi categoryType thay đổi thì hàm mới chạy lại(nếu không thì dùng lại danh sách cũ)
   return (
     <>
       <div className="flex">
@@ -18,8 +19,9 @@ const ProductListPage = ({categoryType}) => {
             <FilterIcon />
           </div>
           <p className="text-[16px] text-black mt-5">Categories</p>
+          <Categories types={categoryContent?.types} />
         </div>
-        <div className="p-[15px]">
+        <div className="p-[16px]">
           <p className="text-black text-lg">{categoryContent?.description}</p>
         </div>
       </div>
