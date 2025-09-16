@@ -3,6 +3,7 @@ import Shop from "./Shop";
 import ProductListPage from "./pages/ProductListPage/ProductListPage.jsx";
 import ProductDetails from "./pages/ProductDetailPage/ProductDetails.jsx";
 import ShopApplicationWrapper from "./pages/ShopApplicationWrapper.jsx";
+import { loadProductById } from "./routes/product.jsx";
  
 
 const router = createBrowserRouter([
@@ -24,6 +25,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/product/:productId",
+                loader: loadProductById,
                 element: <ProductDetails />
             }
         ]
