@@ -47,3 +47,4 @@ const ColorsFilter = ({colors}) => {
 }
 
 export default ColorsFilter;
+export { colorSelector };

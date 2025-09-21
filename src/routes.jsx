@@ -16,7 +16,7 @@ const router = createBrowserRouter([
                 element: <Shop />
             },
             {
-                path: "/womens",
+                path: "/women",
                 element: <ProductListPage categoryType="WOMEN" />
             },
             {
