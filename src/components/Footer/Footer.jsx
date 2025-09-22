@@ -1,4 +1,4 @@
-import FbIcon from "../common/FBIcon";
+import FbIcon from "../common/FbIcon";
 import InstaIcon from "../common/InstaIcon";
 
 const Footer = ({content}) => {
