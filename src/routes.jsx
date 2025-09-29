@@ -6,7 +6,7 @@ import ShopApplicationWrapper from "./pages/ShopApplicationWrapper.jsx";
 import { loadProductById } from "./routes/product.jsx";
  
 
-const router = createBrowserRouter([
+export const router = createBrowserRouter([
     {
         path: "/",
         element: <ShopApplicationWrapper />,
@@ -34,4 +34,3 @@ const router = createBrowserRouter([
 
 ]);
 
-export default router;

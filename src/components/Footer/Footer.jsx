@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import FbIcon from "../common/FbIcon";
 import InstaIcon from "../common/InstaIcon";
 
