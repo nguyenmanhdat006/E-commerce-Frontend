@@ -1,6 +1,6 @@
+import { useMemo } from 'react'
 import SvgStarIcon from '../common/SvgStarIcon';
 import { SvgEmptyStar } from '../common/SvgEmptyStar';
-import { useMemo } from 'react';
 
 const Rating = ({rating}) => {
   const ratingNumber = useMemo(()=>{

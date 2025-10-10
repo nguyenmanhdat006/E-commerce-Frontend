@@ -2,10 +2,10 @@ import SvgFavourite from "../../components/common/SvgFavourite"
 import { Link } from "react-router-dom";
 
 // eslint-disable-next-line no-unused-vars
-const ProductCard = ({ id, title, description, price, discount, rating, brand, thumbnail }) => {
+const ProductCard = ({ id, title, description, price, discount, rating, brand, thumbnail, slug }) => {
   return (
     <div className='flex flex-col hover:scale-105 relative'>
-      <Link to={`/product/${id}`}>
+      <Link to={`/product/${slug}`}>
       <img className='h-[320px] w-[280px] border rounded-lg cursor-pointer object-cover block' src={thumbnail} alt='Jeans'/>
       </Link>
       <div className='flex justify-between items-center'>
