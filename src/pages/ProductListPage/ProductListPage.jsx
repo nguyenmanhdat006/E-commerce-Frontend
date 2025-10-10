@@ -3,7 +3,7 @@ import React, { useEffect, useMemo, useState } from 'react'
 import FilterIcon from '../../components/common/FilterIcon';
 import content from '../../data/content.json';
 import Categories from '../../components/Filters/Categories';
-import PriceFilter from '../../components/Filters/PriceFilter';
+import PriceFilter from '../../components/Filters/priceFillter';
 import ColorsFilter from '../../components/Filters/ColorsFilter';
 import SizeFilter from '../../components/Filters/SizeFilter';
 import ProductCard from './ProductCard';
